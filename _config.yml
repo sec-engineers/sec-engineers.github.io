@@ -1,2 +1,5 @@
 title: Seasoned Engineers Collective
 theme: minima
+
+header_pages:
+  - about.md
