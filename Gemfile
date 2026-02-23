@@ -11,20 +11,5 @@ group :jekyll_plugins do
 end
 
 group :development do
-  gem "html-proofer", "~> 4.26"
-end
-source "https://rubygems.org"
-
-# Minimal Gemfile for this Jekyll site
-# Run `bundle install` to generate Gemfile.lock
-
-gem "jekyll", "~> 4.4"
-
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.16"
-  gem "jekyll-seo-tag", "~> 2.7"
-end
-
-group :development do
-  gem "html-proofer", "~> 4.26"
+  gem "html-proofer", "~> 4.4"
 end
