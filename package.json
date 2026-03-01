@@ -1,0 +1,16 @@
+{
+  "name": "sec-engineers-site",
+  "version": "1.0.0",
+  "description": "Tools for spelling and link checking on the Jekyll site",
+  "private": true,
+  "scripts": {
+    "spell": "cspell lint --config .cspell.json --no-progress \"**/*.md\"",
+    "links": "(command -v lychee >/dev/null 2>&1 && lychee --config=lychee.yml) || echo \"lychee not installed, install via cargo or download binary; CI will run linkcheck\"",
+    "all": "npm run spell && npm run links",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "cspell": "^6.0.0",
+    "husky": "^8.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+name: Linkcheck
+
+on:
+  push: {}
+  pull_request: {}
+
+jobs:
+  links:
+    name: Linkcheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run lychee linkcheck
+        uses: lycheeverse/lychee-action@v2
+        with:
+          config: lychee.yml
