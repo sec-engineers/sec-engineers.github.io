@@ -1,0 +1,21 @@
+# lychee configuration for link checking
+
+# Timeout per request (milliseconds)
+timeout = 30000
+
+# Retry failed requests
+max_retries = 2
+
+# Concurrency
+max_concurrency = 10
+
+# Custom user agent
+user_agent = "sec-engineers-link-checker"
+
+# Sites to skip (only if intentionally excluded)
+exclude = [
+]
+exclude_path = [
+  "node_modules",
+  "vendor"
+]
