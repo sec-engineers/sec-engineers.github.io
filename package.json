@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "spell": "cspell lint --config .cspell.json --no-progress \"**/*.md\"",
-    "links": "(command -v lychee >/dev/null 2>&1 && lychee --config=lychee.yml) || echo \"lychee not installed, install via cargo or download binary; CI will run linkcheck\"",
+    "links": "lychee --config lychee.toml --offline --root-dir \"$PWD\" \"**/*.md\"",
     "all": "npm run spell && npm run links",
     "prepare": "husky install"
   },
