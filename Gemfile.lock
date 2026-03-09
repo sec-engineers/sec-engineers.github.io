@@ -67,6 +67,10 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.7.0)
     mercenary (0.4.0)
+    minima (2.5.2)
+      jekyll (>= 3.5, < 5.0)
+      jekyll-feed (~> 0.9)
+      jekyll-seo-tag (~> 2.1)
     nokogiri (1.17.2-x86_64-linux)
       racc (~> 1.4)
     parallel (1.27.0)
@@ -102,6 +106,7 @@ DEPENDENCIES
   jekyll (~> 4.4)
   jekyll-feed (~> 0.16)
   jekyll-seo-tag (~> 2.7)
+  minima (~> 2.5)
 
 BUNDLED WITH
    2.3.5

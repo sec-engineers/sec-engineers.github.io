@@ -15,7 +15,11 @@
     "linkinator",
     "lycheeverse",
     "POSIX",
-    "htmlproofer"
+    "htmlproofer",
+    "signup",
+    "preemptible",
+    "OCPU",
+    "OCPUs"
   ],
   "patterns": [],
   "dictionaryDefinitions": [],
