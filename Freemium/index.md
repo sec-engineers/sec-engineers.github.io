@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Freemium Software
+title: Freemium Software 
 permalink: /Freemium/
 ---
 
