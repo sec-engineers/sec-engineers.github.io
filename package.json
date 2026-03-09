@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "spell": "cspell lint --config .cspell.json --no-progress \"**/*.md\"",
-    "links": "lychee --config lychee.toml --offline --root-dir \"$PWD\" \"**/*.md\"",
+    "links": "bundle exec jekyll build && lychee --config lychee.toml --offline --root-dir \"$PWD/_site\" \"_site/**/*.html\"",
     "all": "npm run spell && npm run links",
     "prepare": "husky install"
   },

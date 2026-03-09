@@ -10,8 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
 
       - name: Run lychee linkcheck
         uses: lycheeverse/lychee-action@v2
         with:
-          config: lychee.yml
+          config: lychee.toml
+          args: --offline --root-dir ./_site "_site/**/*.html"
